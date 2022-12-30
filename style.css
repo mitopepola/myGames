@@ -1,0 +1,209 @@
+*{box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* navigácia */
+nav, footer{
+    width: 575px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav a, footer a {
+    width: 130px;
+    border-bottom: 2px solid rgb(63, 85, 67);
+    margin: 5px 2px;
+    text-decoration-line: none;
+    color:rgb(63, 85, 67);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    opacity: .6;
+}
+nav a:hover, footer a:hover, .activ{
+    opacity: 1;
+    color:rgb(208, 53, 6) ;
+    border-bottom: 2px solid rgb(208, 53, 6);
+}
+/* navigácia koniec */
+
+/*....kocky......*/
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 575px;
+    height: 90vh;
+    background-color: transparent;
+    border: 3px solid rgb(240, 238, 238);
+    box-shadow: 0 0 5px 5px rgb(197, 196, 196);
+    border-radius: 5px;
+}
+.playGround{
+    flex-direction: row;
+    justify-content: center;
+    height: 30%;
+}
+.middleText{
+    flex-direction: column;
+    justify-content: center;
+    height: 40%;
+}
+.bottomText{
+    flex-direction: column;
+    justify-content: center;
+    height: 30%;
+}
+.playGround, .middleText, .bottomText{
+    display: flex;
+    align-items: center;
+    background-color: antiquewhite;
+    width: 100%;
+}
+footer{
+    display: flex;
+    justify-content: end;
+}
+.btn{
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3px;
+    box-shadow: 0 0 3px 3px rgb(193, 190, 190);
+    margin: 5px;
+    color: rgb(149, 141, 122);
+}
+.totalScore{
+    background-color: chocolate;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 0 3px 3px rgb(193, 190, 190);
+    margin: 5px;
+    width: 100%;
+    
+}
+
+.player0, .player1 {
+    width: 200px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3px;
+    padding: 3px, 5px;
+    margin: 5px;
+    background-color: transparent;
+}
+#name_0, #name_1{
+    background-color: transparent;
+} 
+.active{
+    background-color:rgb(78, 117, 69);
+}
+#totalScorePlayer_0, #totalScorePlayer_1 {
+    color: rgb(246, 243, 243);
+    background-color: transparent;
+}
+.currentScore{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(249, 248, 249);
+    border-radius: 3px;
+    box-shadow: 0 0 3px 3px rgb(193, 190, 190);
+    margin: 5px;
+    color: rgb(149, 141, 122);
+    background-color: chocolate;
+    color: rgb(229, 225, 226);
+}
+.currentScore p{
+    text-align: center;
+    background-color: chocolate;
+}
+#currentScore_0, #currentScore_1{
+    color: rgb(146, 7, 42);
+    font-size: 30px;
+}
+
+
+.btn:hover{
+    box-shadow: 0 0 3px 3px rgb(244, 102, 102);
+    scale: 1.05;
+    cursor: pointer;
+}
+.cubeImg{
+    width: 120px;
+    height: 120px;    
+}
+.cubeImgOne{
+    display: none;
+    transition-property: display 2s;
+    
+    
+}
+.legenda{
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#count{
+    margin-top: 0;
+}
+.myInput{
+    display: flex;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+input{
+    border-radius: 2px;
+    border-color: #fff;
+}
+input[type = submit] {
+    width: 100px;
+    margin-top: 10px;
+    background-color: rgb(19, 103, 75);
+    padding: 5px 5px;
+    color: #fff;
+    border-radius: 5px;
+    
+}
+input[type = submit]:hover { 
+    color: rgb(243, 10, 10);
+}
+h4{
+    color: rgb(19, 103, 75);
+}
+h5{
+    padding: 3px 5px;
+    margin: 5px;
+    font-size: 15px;
+    color: #fff;
+}
+.submitIcons {
+    display: flex;
+    flex-direction: row;
+}
+
+.submitIcons img{
+    margin-top: 13px;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+    border: 2px solid rgb(19, 103, 75);
+}
+.submitIcons img{
+    cursor: pointer;
+}
